@@ -37,7 +37,7 @@ export default function TaskForm(){
           );
         }
     
-        navigate("../");
+        navigate("/react-rtk-crud");
     }
 
     useEffect(() => {

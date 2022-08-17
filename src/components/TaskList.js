@@ -26,7 +26,7 @@ export default function TaskList(){
                                     <h2>{task.title}</h2>
                                     <p>{task.description}</p>       
                                     <div>
-                                        <button className="Button"><Link to={"./EditTask/"+task.id} className="Link">Edit</Link></button>
+                                        <button className="Button"><Link to={"/react-rtk-crud/EditTask/"+task.id} className="Link">Edit</Link></button>
                                         <button className="Button" onClick={() => handleDelete(task.id)}>delete</button>
                                     </div>
                                 </div>)}
