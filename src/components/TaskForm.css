@@ -1,0 +1,29 @@
+.FormContainer{
+    display: flex;
+    height: 100vh;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+    width: 200px;
+    border: 1px solid #414141;
+}
+
+form input{
+    height: 10%;
+}
+
+form textarea{
+    height: 170px;
+    width: 170px;
+}
+
+form input:focus-visible{
+    outline: none;
+}
+
+form textarea:focus-visible{
+    outline: none;
+}

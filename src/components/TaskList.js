@@ -1,6 +1,7 @@
 import { useSelector, useDispatch } from "react-redux"
 import { deleteTask } from "../features/tasks/taskSlice";
 import {useNavigate, Link} from "react-router-dom";
+import "./TaskList.css"
 
 export default function TaskList(){
 
@@ -20,13 +21,17 @@ export default function TaskList(){
 
     return(
         <div>
-            {tasks.map(task => <div key={task.id}> 
+            <div className="TasksContainer">
+            {tasks.map(task => <div key={task.id} className="Task"> 
                                     <h2>{task.title}</h2>
                                     <p>{task.description}</p>       
-                                    <Link to={"./EditTask/"+task.id}>Edit</Link>
-                                    <button onClick={() => handleDelete(task.id)}>delete</button>
+                                    <div>
+                                        <button className="Button"><Link to={"./EditTask/"+task.id} className="Link">Edit</Link></button>
+                                        <button className="Button" onClick={() => handleDelete(task.id)}>delete</button>
+                                    </div>
                                 </div>)}
-        <button onClick={Redirect}>Create Task</button>
+            </div>
+        <button onClick={Redirect} className="CreateTask">Create Task</button>
         </div>
     )
 }
