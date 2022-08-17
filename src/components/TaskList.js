@@ -16,7 +16,7 @@ export default function TaskList(){
     }
 
     const Redirect = () => {
-        navigate("/CreateTask")
+        navigate("react-rtk-crud/CreateTask")
     }
 
     return(
