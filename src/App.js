@@ -7,9 +7,9 @@ function App() {
 
   return (
     <Routes>
-      <Route path='/' element={<TaskList/>}></Route>
-      <Route path='/CreateTask' element={<TaskForm/>}></Route>
-      <Route path='/EditTask/:id' element={<TaskForm/>}></Route>
+      <Route path='/react-rtk-crud' element={<TaskList/>}></Route>
+      <Route path='/react-rtk-crud/CreateTask' element={<TaskForm/>}></Route>
+      <Route path='/react-rtk-crud/EditTask/:id' element={<TaskForm/>}></Route>
     </Routes>
   );
 }
